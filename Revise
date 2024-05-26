@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision Progress Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .progress-container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #ddd;
+            border-radius: 25px;
+            margin: 20px 0;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            height: 30px;
+         
+            width: 0;
+            background-color: #4caf50;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            transition: width 0.3s ease;
+        }
+        .subject {
+            margin-bottom: 10px;
+        }
+        .subject-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Revision Progress Chart</h1>
+    <div class="progress-container">
+        <div class="subject">
+            <div class="subject-name">Math</div>
+            <div class="progress-bar" id="math-progress" style="width: 70%;">70%</div>
+        </div>
+        <div class="subject">
+            <div class="subject-name">English</div>
+            <div class="progress-bar" id="english-progress" style="width: 50%;">50%</div>
+        </div>
+        <div class="subject">
+            <div class="subject-name">Science</div>
+            <div class="progress-bar" id="science-progress" style="width: 40%;">40%</div>
+        </div>
+        <div class="subject">
+            <div class="subject-name">History</div>
+            <div class="progress-bar" id="history-progress" style="width: 80%;">80%</div>
+        </div>
+    </div>
+</body>
+</html>
